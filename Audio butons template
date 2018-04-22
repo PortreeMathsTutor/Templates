@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"> 
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1 onclick="document.getElementById('w').play();">This is a Heading that howls</h1>
+    
+<audio id="w" >
+    <source src="wolf.mp3">
+  </audio>       
+    
+    
+    
+<p onclick="document.getElementById('x').play();">This is a paragraph that burps.</p>
+ 
+<button type="button">Lion
+<p>
+  <audio controls>
+  <source src="lion.mp3">
+  </audio>
+</p>    
+</button> 
+
+    <br/>       
+
+      
+<button type="button">Run 
+<p>
+    <audio controls>
+    <source src="run.mp3">
+    </audio>
+</p>   
+</button>       
+ 
+      <br/> <br/>  
+    
+<a onclick="document.getElementById('x').play();"> This link is connected to the audio with id='x'   </a> 
+   
+    
+  <audio id="x" >
+    <source src="burp.mp3">
+  </audio>    
+    
+ 
+    <br/>    <br/>  
+    
+<button onclick="document.getElementById('y').play();"> This link is connected to the audio with id='y'   </button> 
+        
+    
+    
+    
+ <audio id="y" >
+    <source src="lion.mp3">
+  </audio>   
+      
+ <svg onclick="document.getElementById('y').play();">
+
+<ellipse ry="10" rx="10"  cy="13" cx="22" stroke-      width="5" stroke="black" fill="red"/>
+ 
+ </svg>
+
+</body>
+</html>
