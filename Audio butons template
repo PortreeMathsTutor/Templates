@@ -15,24 +15,15 @@
     
 <p onclick="document.getElementById('x').play();">This is a paragraph that burps.</p>
  
-<button type="button">Lion
-<p>
-  <audio controls>
-  <source src="lion.mp3">
-  </audio>
-</p>    
-</button> 
+ <audio controls>
+  <source src="lion.mp3" type="audio/mpeg">
+
+</audio> 
 
     <br/>       
 
       
-<button type="button">Run 
-<p>
-    <audio controls>
-    <source src="run.mp3">
-    </audio>
-</p>   
-</button>       
+     
  
       <br/> <br/>  
     
@@ -40,7 +31,7 @@
    
     
   <audio id="x" >
-    <source src="burp.mp3">
+    <source src="Burp.mp3">
   </audio>    
     
  
