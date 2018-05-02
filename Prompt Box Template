@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"> 
+<html>
+<head>
+<title>Prompt box</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+var YourName = prompt("Please enter your name", "name goes here");
+
+
+
+	document.write("Hello " + YourName + "! How are you today?");
+
+</script>
+
+
+
+
+</body>
+</html>
