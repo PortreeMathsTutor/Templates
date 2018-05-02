@@ -3,20 +3,16 @@
 <head>
 <title>Prompt box</title>
 </head>
+
 <body>
 
 <script type="text/javascript">
 
-var YourName = prompt("Please enter your name", "name goes here");
+var YourName = prompt("Please enter your name", );
 
-
-
-	document.write("Hello " + YourName + "! How are you today?");
+document.write("Hello " + YourName + "! How are you today?");
 
 </script>
-
-
-
 
 </body>
 </html>
