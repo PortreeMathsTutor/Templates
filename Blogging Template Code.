@@ -1,0 +1,158 @@
+<DOCTYPE html>
+<html>
+<head>
+<title>Title.</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <base target="_blank">
+  
+<style>
+
+* {
+
+    box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+    
+    padding: 20px;
+    background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+    float: left;
+    width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+    background-color: #fff;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+     background-color: white;
+     padding: 20px;
+     margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+.footer {
+    padding: 16px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2 style="font-family: 'Roboto', sans-serif;;">Example of a blogging website.</h2>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2></h2>
+       <div class="fakeimg" style="height:500px;">
+	  <img src="supremelysab-787607-unsplash.jpg" alt="Image" width=100%  height="460">
+      </div>
+	  <p></p>
+      <p>If you wanted to show someone how to make a website you would need to show them how to use image tags and anchor tags. You might want to show them how to write their own CSS 
+	  or if you are as lazy as me show them how not to write their own CSS. 
+	  In this example website I added a Google comment box, and a fun little prompt box.  I quite like font-awesome so I added the icon for Github.
+	 You can go a bit mad adding lots and lots of widgets, I certainly do. Have a look at<a href="http://100widgets.com/"> http://100widgets.com/ </a> for good examples of most widgets.</p>
+<!-- begin wwww.htmlcommentbox.com -->
+ <div id="HCB_comment_box"><a href="">HTML Comment Box</a> is loading comments...</div>
+ <link rel="stylesheet" type="text/css" href="//www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+ <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="//www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&opts=16862&num=10&ts=1525852481450");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
+<!-- end www.htmlcommentbox.com -->  
+
+
+   </div>
+
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+	  
+<!-- begin promt box -->
+<button onclick="myFunction()">Click here.</button>
+
+<p id="demo"></p>
+<script>
+function myFunction() {
+    var txt;
+
+    var person = prompt("Please enter your name:", "Harry Potter");
+    if (person == "Jakob"|| person == "Tily"|| person == "Elliot"|| person == "Sarah") {
+        txt = "Hello " + person + ". "+" \n You are the greatist!";
+    } else {
+        txt = "Hello  " + person ;
+    }
+    document.getElementById("demo").innerHTML = txt;
+}
+</script>
+<!-- end prompt box -->
+  
+    </div>
+    <div class="card">
+      <h3></h3>
+	  <div class="fakeimg"><a href="https://unsplash.com/photos/hj-ycpqyn8o" ><img src="nicePicture.png" alt="Image  link" ></a></div>
+    </div>    <div class="card">
+      <a href="https://github.com/PortreeMathsTutor/Templates" <h3>My Github templates.</h3></a>
+	  <div class="fakeimg"><a href="https://github.com/PortreeMathsTutor/Templates" ><i class="fa fa-github" style="font-size:60px"></i></a></div>
+    </div>
+    <div class="card">
+      <h3></h3>
+	  	<!-- a like button -->
+		  <script type="text/javascript" src="//100widgets.com/js_data.php?id=259"></script>
+		  <!-- end like button -->
+      <p>.</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+ <a href="#top" > <h2>Footer</h2></a>
+</div>
+
+</body>
+</html>
